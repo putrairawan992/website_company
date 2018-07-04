@@ -1,0 +1,221 @@
+/*------------------------------------ ABOUT UMRAHAJJ CSS HOME PAGE---------------------------------------------------- */
+.content-home-1 {
+    background-image: url("../images/background_putihmiring1.png");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    margin-top: -10%;
+    margin-left: -59px;
+  }
+  
+  /*------ START IMAGE KUBBAH ABOUT HOME PAGE ------ */
+  
+  .masjid_kabbah {
+    width: 40%;
+    margin-top: 145px;
+    margin-left: 50px;
+  }
+  
+  @media (max-width: 767px) {
+    .hidden-xs {
+      display: none !important;
+    }
+  }
+  
+  .about h1 {
+    color: #24565c;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 686px;
+    margin-top: -495px;
+  }
+    
+  .hr_sendiri{
+    margin-top: -4%;
+    width: 30%;
+    color: #26b9cb;
+    border-top: 6px solid;
+    margin-left: 402px;
+  }
+  
+  .tulisan {
+    margin-top: 35px;
+    font-size: 18px;
+    margin-left: 49%;
+    width: 50%;
+  }  
+  
+  .image-content2 {
+    height: 40px;
+    margin-top: -255px;
+  }
+  
+  /*------ END IMAGE KUBBAH ABOUT HOME PAGE ------ */
+  
+  
+  /*------------- START ABOUT IMAGE HOME PAGE-----------------  */
+  
+  .image-content2 p {
+  
+    font-size: 17px;
+    margin-top: 15%;
+    color: black;
+    position: absolute;
+    margin-left: 52%;
+    text-align: justify;
+  }
+  
+  .image-content .p9 {
+  
+    font-size: 15px;
+    margin-top: 19%;
+    position: absolute;
+    margin-left: 16%;
+    width: 51%;
+    text-align: center;
+  }
+  
+  .image-content2 .p2 {
+  
+    font-size: 17px;
+    margin-top: 30%;
+    color: black;
+    position: absolute;
+    margin-left: 86%;
+  }
+  
+  .image-content2 img {
+    margin-left: 35%;
+    width: 20%;
+    margin-top: 1%;
+  }
+  
+  .image-content2 .img2 {
+    margin-left: 71%;
+    width: 8%;
+    margin-top: 19%;
+    position: absolute;
+    height: 131px;
+  }
+  
+  .image-content2 .img1 {
+    margin-left: 53%;
+    width: 8%;
+    margin-top: 20%;
+    position: absolute;
+  }
+  
+  .image-content2 .img3 {
+    margin-left: 86%;
+    width: 8%;
+    margin-top: 21%;
+    position: absolute;
+  }
+  
+  .image-content2 .p5 {
+    font-size: 17px;
+    margin-top: 31%;
+    color: black;
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    padding-left: 202px;
+  }
+  
+  .image-content2 .p10 {
+    font-size: 17px;
+    margin-top: 35%;
+    color: black;
+    position: absolute;
+    margin-left: 929px;
+    text-align: center;
+    width: 17%;
+  }
+  
+  .image-content2 .p4 {
+    font-size: 17px;
+    margin-top: 31%;
+    color: black;
+    position: absolute;
+    margin-left: 49%;
+    text-align: center;
+    width: 16%;
+  }
+  
+  .image-content2 .p8 {
+    font-size: 17px;
+    margin-top: 35%;
+    color: black;
+    position: absolute;
+    margin-left: 49%;
+    text-align: center;
+    width: 17%;
+  }
+  
+  .image-content2 .b1 {
+    margin-left: 54%;
+    font-size: 24px;
+    margin-top: 28%;
+    color: black;
+    position: absolute;
+  }
+  
+  .image-content2 .p6 {
+    font-size: 17px;
+    margin-top: 439px;
+    color: black;
+    position: absolute;
+    margin-left: 84%;
+    width: 12%;
+    text-align: center;
+  }
+  
+  .image-content2 .p7 {
+  
+    font-size: 17px;
+    margin-top: 494px;
+    color: black;
+    position: absolute;
+    margin-left: 83%;
+    width: 14%;
+    text-align: center;
+  }
+  
+  .image-content2 .b3 {
+    margin-left: 87%;
+    font-size: 24px;
+    margin-top: 397px;
+    color: black;
+    position: absolute;
+  }
+  
+  .image-content2 .b2 {
+    margin-left: 1012px;
+    font-size: 24px;
+    margin-top: 405px;
+    color: black;
+    position: absolute;
+  }
+  
+  .image-content2 .p1 {
+  
+    margin-left: 97%;
+    font-size: 24px;
+    margin-top: 1%;
+    color: black;
+    position: absolute;
+  }
+  /*-------------END START ABOUT IMAGE HOME PAGE-----------------  */
+  
+  /*----------------------------------------- ABOUT UMRAHAJJ CSS HOME PAGE -------------------------------------------------*/
+  
+  .img-responsive,
+  .thumbnail > img,
+  .thumbnail a > img,
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

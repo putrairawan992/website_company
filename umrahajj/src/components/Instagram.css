@@ -1,0 +1,66 @@
+.homepage-instagram h1 {
+    color: white;
+    font-size: 2.25em;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 2em;
+  
+  }
+
+  .homepage-instagram{
+    background-image: url("../images/background_home1.png");
+    height: 100vh;
+    text-align: center;
+}
+
+.logo-instagram .callme3{
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+.homepage-instagram  svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    height: 60px;
+}
+
+.homepage-instagram .svg-inline--fa.fa-w-14 {
+    width: 3.875em;
+}
+  .callme2{
+    color: white;
+    margin-left: -1%;
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+.slick-next {
+    right: 39px;
+}
+
+.slick-prev {
+    left: 1250px;
+}
+
+/* .slick-slider {
+    padding-top: 5%;
+} */
+
+@media (max-width: 767px) {
+    .hidden-xs {
+      display: none !important;
+    }
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    color: white;    
+}
+
+.slick-next, .slick-prev {
+    top: 106%;
+}
+
+
+
