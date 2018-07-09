@@ -6,8 +6,9 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-
+import {Container, Row, Col} from 'reactstrap';
 import './Slider.css';
+import axios from 'axios';
 
 const items = [
   {
@@ -26,6 +27,7 @@ const items = [
     caption: ''
   }
 ];
+
 
 class Slider extends Component {
   constructor(props) {
@@ -82,26 +84,31 @@ class Slider extends Component {
     });
 
     return (
-      <div className="slider-content-home">
-        <style>
-          {
-            `.custom-tag {
-               width: 100%;
-                background: black;
-              }`
-          }
-        </style>
-        <Carousel
-          activeIndex={activeIndex}
-          next={this.next}
-          previous={this.previous}
-        >
-          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-          {slides}
-        
-        </Carousel>
-        
-      </div>
+
+    <Container fluid>
+      <Row> 
+            <div className="slider-content-home">
+              <style>
+                {
+                  `.custom-tag {
+                    width: 100%;
+                    background: black;
+                    }`
+                }
+              </style>
+              <Carousel
+                activeIndex={activeIndex}
+                next={this.next}
+                previous={this.previous}
+              >
+                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+                {slides}
+              
+              </Carousel>
+              
+            </div>
+        </Row>
+      </Container>
     );
     
   }

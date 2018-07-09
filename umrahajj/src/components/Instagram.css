@@ -43,20 +43,13 @@
     left: 1250px;
 }
 
-/* .slick-slider {
-    padding-top: 5%;
-} */
-
 @media (max-width: 767px) {
     .hidden-xs {
       display: none !important;
     }
 }
 
-.slick-prev:before, 
-.slick-next:before {
-    color: white;    
-}
+
 
 .slick-next, .slick-prev {
     top: 106%;

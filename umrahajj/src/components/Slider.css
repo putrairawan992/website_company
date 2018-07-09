@@ -37,3 +37,10 @@
         background-color: #26b9cb;
         display: list-item;
     }
+
+    @media screen and (min-width: 377px) and (max-width: 500px ){
+    .slider-content-home{
+        margin-top: 119px;
+    }
+
+}    

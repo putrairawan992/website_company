@@ -3,7 +3,7 @@ import Slider, { CenterMode } from 'react-slick';
 import './Instagram.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-
+import axios from 'axios';
 
 function SampleNextArrow(props) {
 
@@ -20,11 +20,9 @@ function SampleNextArrow(props) {
         ...style,
 
         display: 'block',
-
         transform: 'scale(2,2)',
+     
       }}
-
-      img={{ src: require("../images/Artboard.jpg")}}
 
       onClick={onClick}
 
@@ -50,7 +48,6 @@ function SamplePrevArrow(props) {
         ...style,
 
         display: 'block',
-
         transform: 'scale(2,2)',
 
       }}
@@ -63,8 +60,67 @@ function SamplePrevArrow(props) {
 
 }
 
+const PostCard = ({title, body, imageUrl, imageCover}) => (
+	<div class="instagram">
+		<a href="newsroom_details.html">
+			<img style={imageCover} src={""} className="img33" />
+		</a>
+	</div>
+)
+
 class Instagram extends React.Component {
-    render() {
+
+  state = {
+    posts: null,
+}
+
+fetchFromApi() {
+    console.log("axios")
+    axios({
+        method: 'GET',
+        url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=4679952802.1677ed0.4cd5e847be2f48e19889b29dc6645b5a',
+    }).then(res => {
+        console.log(res.data)
+        this.setState({
+            posts: [...res.data],
+        });
+
+    }).catch(error => {
+        console.log(error)
+    })
+}
+
+componentDidMount() {
+    this.fetchFromApi();
+}
+
+render() {
+const { posts } = this.state;
+
+let cards = null;
+
+if(this.state.posts != null) {
+  cards = posts.map(post => {
+    const imageUrl = post.better_featured_image.source_url;
+    console.log("post", post)
+    console.log("imageUrl", imageUrl);
+    console.log("excerpt", post.excerpt.rendered);
+    console.log("title", post.title.rendered);
+
+    const imageCover = {
+      background: `url(${imageUrl})`,
+      "background-size": "cover",
+    }
+
+    return <PostCard 
+      title={post.title.rendered}
+      body={post.excerpt.rendered}
+      imageUrl={".."}
+      imageCover={imageCover}
+    />
+  }) 
+}
+
       var settings = {
         className: "center hidden-xs",
         centerMode: true,
@@ -77,33 +133,14 @@ class Instagram extends React.Component {
       };
       
       return (
+        
         <div className="instagram container-fluild homepage-instagram hidden-xs">
 
         <h1 className="">Our Gallery</h1>
 
-        <Slider {...settings}>
-          <div>
-          <img src={require("../images/instagram1.png")} className="img33" />
-          </div>
-          <div>
-          <img src={require("../images/instagram1.png")} />
-          </div>
-          <div>
-          <img src={require("../images/instagram1.png")} />
-          </div>
-          <div>
-          <img src={require("../images/instagram1.png")} />
-          </div>
-          <div>
-          <img src={require("../images/instagram1.png")} />
-          </div>
-          <div>
-          <img src={require("../images/instagram1.png")} />
-          </div>
-          <div>
-          <img src={require("../images/instagram1.png")} />
-          </div>
-        </Slider>
+       <Slider {...settings}>
+				{cards}
+			</Slider>
 
          <div class="logo-instagram">
 						<p class="callme2">FOLLOW US</p>

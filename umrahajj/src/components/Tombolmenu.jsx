@@ -24,27 +24,22 @@ class Tombolmenu extends React.Component {
     render() {
         return (
           <Container fluid>
-            <Row>
                 <div class="navbar-inverse navbar-fixed-top">
               <Row>
-              <Col md="6">
+              <Col md="6" xs="4">
                 <div>
-                 <a className="navbar-brand" href="./Home.jsx"><img src={logo} className="navbar-brand"/></a>
-                </div>  
+                 <a className="navbar-brand" href="Home"><img src={logo} className="navbar-brand"/></a>
+                </div>
               </Col>
-              </Row>
-
-              <Row>
-                <Col md="4">  
+            
+                <Col md="4" xs="4">
                 <div>
                   <a className="navbar-brand2"  href="https://partner.umrahajj.co/#/?signup=home"> <Button type="button" className="btn btn-warning2 btn2">Join as Partner
                   </Button></a>
-                </div>  
-                </Col>    
-              </Row>
-
-                <Col md="2">
-
+                </div>
+                </Col>
+            
+            <Col md="2" xs="4">
                 <div style={styles}>
                       <div className="menu-home">
                         <Popup
@@ -52,22 +47,19 @@ class Tombolmenu extends React.Component {
                           overlayStyle={{ background: "rgba(255,255,255,0.98" }}
                           contentStyle={contentStyle}
                           closeOnDocumentClick={false}
-                          trigger={open => 
+                          trigger={open =>
                           <BurgerIcon open={open} />}
                         >
                           {close => <Menu close={close} />}
                         </Popup>
-                
-                                              
-    
                     </div>
                 </div>
-                </Col>
-                
+              </Col>
+
+                   </Row>           
                 </div>
-              
-                    </Row> 
-                      </Container>       
+        </Container>
+
         );
     }
 }

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './About.css';
+import { Container, Row, Col} from "reactstrap";
 
 class About extends Component {
     render() {
         return (      
         <div className="content-home-1">
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-12">
+            <Container fluid>
+                <Row>
+                    <Col lg="12">
                     <img src={require("../images/masjid_kabbah.png")} className="masjid_kabbah hidden-xs"/> 
                             <div className="about">
                                     <h1>About Umrahajj <hr className="hr_sendiri"/> </h1>
@@ -36,9 +37,9 @@ class About extends Component {
                                                 <p className="p6">Intuitive user friendly interface</p>
                                                 <p className="p7">Modest social angagement features</p>
 			                    </div>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
       
      

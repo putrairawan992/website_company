@@ -14,22 +14,22 @@ export default ({ close }) => (
 
   <Container fluid>
     <Row>
-   
+
 
       <div className="logo-umrahajj">
         <img src={logo}  alt="twitter"/>
       </div>
-    
+
       <hr className="hr_menu" />
 
 
       <div className="menu main-menu2">
-        
+
         <ul>
           <Row>
             <Col md="3" xs="12">
             <li>
-              <NavLink onClick={close} activeClassName="current" to="Home">
+              <NavLink onClick={close} activeClassName="current" to="/home">
                 About
               </NavLink>
             </li>
@@ -50,19 +50,19 @@ export default ({ close }) => (
                 </Col>
                 <Col md="3" xs="12">
                     <li>
-                      <NavLink onClick={close} activeClassName="cuttent" to="#">
+                      <NavLink onClick={close} activeClassName="cuttent" to="/faq">
                         FAQ
                       </NavLink>
                     </li>
                     </Col>
                     </Row>
-                    
+
                       <div className="main-menu3">
                       <Row>
                       <Col md="3" xs="12">
                         <li>
-                          <NavLink onClick={close} activeClassName="cuttent" to="#">
-                            Contact 
+                          <NavLink onClick={close} activeClassName="cuttent" to="/contact">
+                            Contact
                           </NavLink>
                         </li>
                         </Col>
@@ -82,15 +82,15 @@ export default ({ close }) => (
                     </Col>
                     </Row>
                     </div>
-            
-           
+
+
           </ul>
-        </div> 
-       
+        </div>
+
        </Row>
 
-    
-<div className="footer-newsroom">
+
+<div className="footer-newsroom hidden-xs">
   <Row>
     <Col md="6">
       <div className="form-group11">
@@ -100,23 +100,23 @@ export default ({ close }) => (
     </Col>
         <Col md="6">
             <div className="social-newsroom">
-							  <p>Follow Us</p>
-							<a className="callme1 callme22" href="https://www.facebook.com/umrahajjworld/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
-								<a className="callme1 callme33" href="https://www.instagram.com/umrahajj/" target="_blank">
+                <p>Follow Us</p>
+              <a className="callme1 callme22" href="https://www.facebook.com/umrahajjworld/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
+                <a className="callme1 callme33" href="https://www.instagram.com/umrahajj/" target="_blank">
                    <FontAwesomeIcon icon={faInstagram} /></a>
-								<a className="callme1 callme55" href="https://www.linkedin.com/company/umrahajj/">
+                <a className="callme1 callme55" href="https://www.linkedin.com/company/umrahajj/">
                 <FontAwesomeIcon icon={faLinkedinIn} /></a>
-								<a className="callme1 callme44" href="https://twitter.com/umrahajjworld" target="_blank">
+                <a className="callme1 callme44" href="https://twitter.com/umrahajjworld" target="_blank">
                 <FontAwesomeIcon icon={faTwitter} /></a>
-						
+
             </div>
-           
+
             </Col>
             </Row>
           </div>
-        
-    
-    
+
+
+
   </Container>
 
 );

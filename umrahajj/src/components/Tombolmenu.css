@@ -13,7 +13,6 @@
   display: inline-block;
   cursor: pointer;
   position: fixed;
-  right: 20px;
   top: 8px;
   z-index: 9999;
   padding: 10px;
@@ -100,7 +99,7 @@
 }
 
 .navbar-brand2 .btn2 {
-  margin-left: 1000px;
+  margin-left: 285px;
   box-sizing: border-box;
   transition: all .25s ease-in-out 0s;
   border-radius: 200px;
@@ -108,27 +107,43 @@
   padding-left: 30px;
   padding-right: 30px;
   background-color: #f76e26;
-  margin-top: -83px;
+  margin-top: 15px;
   color: white;
   font-weight: 400;
 }
 
-.btn-warning2:hover {
-  color: #212529;
-  font-weight: 500;
-  background-color: #fff;
-  border-color: #d39e00;
+.navbar-inverse 
+.btn-secondary:hover {
+  color: black;
+  background-color: white;
+  border-color: #545b62;
 }
 
 .navbar-inverse a:hover {
   text-decoration: none;
 }
 
-.menu-home .popup-content  {
-position: relative;
-background: rgba(255, 255, 255, 0) none repeat scroll 0% 0%;
-width: 100%;
-margin: auto;
-border: medium none;
-padding: 0px !important;
+
+
+
+@media screen and (min-width: 377px) and (max-width: 500px ){
+
+ 
+    .navbar-brand2 .btn2 {
+      margin-left: -21px;
+      margin-top: 78px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }  
+
+  .navbar-fixed-top {
+    height: 118px;
+}
+
+.navbar-brand img {
+  margin-top: 12px;
+  margin-left: 80px;
+  width: 150%;
+}
+
 }

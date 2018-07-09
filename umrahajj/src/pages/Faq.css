@@ -1,0 +1,129 @@
+.content-ask {
+
+    margin-top: 10%;
+    background-image: url("../images/background_blank.png");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+  
+  .content-ask h1 {
+    color: #24565c;
+    text-align: center;
+  }
+  
+  .ask-group {
+    margin-top: 5%;
+  }
+  
+  .search-container {
+    margin-left: 20%;
+  }
+  
+  .content-faq{
+  margin-left: 47%;
+  margin-top: 50px;
+  }
+  
+  .btn-success22 {
+    margin-top: -62px;
+    margin-left: 71%;
+    background-color: #128e9d;
+    color: white;
+    padding: 9px 20px;
+  }
+  
+  .search {
+    height: 34px;
+    width: 70%;
+    padding: 19px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: black;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  }
+  
+  .ask-content1 {
+    border-radius: 3px;
+    border: 1px solid #26b9cb;
+    background-color: transparent;
+    padding: 10px 8px;
+    border-top-left-radius: 5px;
+  
+  }
+  
+  .ask-content2 {
+    background-color: #26b9cb;
+    color: white;
+    padding: 10px 8px;
+    margin-top: -1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .ask-content3 {
+    margin-top: 2%;
+    border-radius: 3px;
+    border: 1px solid #26b9cb;
+    background-color: transparent;
+    padding: 10px 8px;
+    border-top-left-radius: 5px;
+  
+  }
+  
+  .btn-success2 {
+    margin-top: -62px;
+    margin-left: 84%;
+    background-color: #128e9d;
+    color: white;
+    padding: 9px 20px;
+  }
+  
+  .btn-success2:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+  }
+  
+  .content-ask1 img {
+    margin-top: 2%;
+    width: auto;
+  
+  }
+  
+  .content-faq h1 {
+    color: #26b9cb;
+    font-size: 20px;
+    margin-left: -5%;
+  }
+  
+  .content-faq p {
+    margin-left: -13%;
+  }
+  
+  .content-ask1 .contact-ask {
+  
+    border: 1px solid #128e9d;
+    border-radius: 4px;
+    width: auto;
+    background-color: transparent;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #128e9d;
+  
+  }
+  
+  .ask2:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+  }
