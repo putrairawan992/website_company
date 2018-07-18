@@ -14,11 +14,13 @@ class Home extends Component {
         
                 <div class="jumbotron2">
                    <Container fluid>
+
                         <Row>
-                            <Col md="12">
+                            <Col md="12" xs="12" lg="12" sm="12">
                                 <h1>Our Features <hr class="hr_sendiri1"/></h1>
                             </Col>
 		                </Row>
+
                         <Row>
                             <Col md="3">
                                 <div class="device wp3 animated bounceInDown">
@@ -27,30 +29,19 @@ class Home extends Component {
                                     </div>
                                 </div>
                             </Col>
-                             
-                             
-
-                                <Col xs="12" md="3">
-                                    <img src={require("../images/test11.png")}  class="img-responsive img1"/>
-                                    {/* <!-- <b class="b4">Marketplace </b><p class="p1" >Find and book umrah and hajj on your mobile app or website.</p> --> */}
-                              
+                                <Col xs="12" md="3" lg="3" sm="3">
+                                    <img src={require("../images/test11.png")} class="img-responsive img1"/>
                                 </Col>
 
-                                  <Col xs="12" md="3">
-                                <img src={require("../images/test22.png")} class="img-responsive img1"/>
-                                        {/* <!-- <b class="b5">Qibla</b><p class="p3">Qibla compass on your mobileapp.</p> --> */}
+                                <Col xs="12" md="3" lg="3" sm="3">
+                                    <img src={require("../images/test22.png")} class="img-responsive img1"/>
                                 </Col>
 
-                                   <Col xs="12" md="3">
-                                <img src={require("../images/test33.png")} class="img-responsive img1"/>
-                                        {/* <!-- <b class="b6">Prayer Reminder</b><br><p class="p9">Prayer reminders on your mobile app.</p> --> */}
-                                        </Col>
-                             
-                           
-                         
-
-                          
+                                <Col xs="12" md="3" lg="3" sm="3">
+                                    <img src={require("../images/test33.png")} class="img-responsive img1"/>
+                                </Col>
                           </Row>
+
                     </Container>
                 </div>   
                 

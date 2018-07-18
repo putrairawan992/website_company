@@ -28,16 +28,78 @@ const items = [
   }
 ];
 
-
 class Slider extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeIndex: 0 };
+    this.state = { 
+      activeIndex: 0,
+      sliders: null, 
+    };
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
+  }
+
+  componentDidMount() {
+    this.fetchItemsFromApi();
+  }
+
+  fetchItemsFromApi() {
+    axios({
+      method: "GET",
+      url: "https://api.umrahajj.co/utils/home_slider"
+    }).then(result => {
+      console.log("result", result.data.data);
+      this.setState({sliders: [...result.data.data]});
+    }).catch(error => {
+      console.error("error", error);
+      // Contoh response: 
+      const data = [
+        {
+        "id_vendor": "0",
+        "id_package": "0",
+        "position": "0",
+        "action": "browser",
+        "url": "",
+        "images_url": "http://static.umrahajj.co/images/sliderimages/ads/1524569234_4.jpg",
+        "title": "Umrah Kakek Jali",
+        "keterangan": "Ayo bersama-sama umrahkan kakek jali"
+        },
+        {
+        "id_vendor": "0",
+        "id_package": "0",
+        "position": "0",
+        "action": "browser",
+        "url": "",
+        "images_url": "http://static.umrahajj.co/images/sliderimages/ads/1524569250_4.jpg",
+        "title": "Umrah anak",
+        "keterangan": "Ayo daftarkan anak anda"
+        },
+        {
+        "id_vendor": "0",
+        "id_package": "0",
+        "position": "1",
+        "action": "browser",
+        "url": "http://admin.umrahajj.co/sliderimagesads/edit/2",
+        "images_url": "http://static.umrahajj.co/images/sliderimages/ads/1525052538_4.jpg",
+        "title": "Promo Umrah 60 hari",
+        "keterangan": "Umrah bersama artis pendatang baru"
+        },
+        {
+        "id_vendor": "0",
+        "id_package": "0",
+        "position": "2",
+        "action": "browser",
+        "url": "",
+        "images_url": "http://static.umrahajj.co/images/sliderimages/ads/1524569123_4.jpg",
+        "title": "Umrah untuk nenek mizan",
+        "keterangan": "Ayo donasi untuk umrah nenek mizan"
+        }
+      ];
+      this.setState({sliders: [...data]});
+    })
   }
 
   onExiting() {
@@ -66,9 +128,9 @@ class Slider extends Component {
   }
 
   render() {
-    const { activeIndex } = this.state;
-
-    const slides = items.map((item) => {
+    const { activeIndex, sliders } = this.state;
+    let slides = null;
+    slides = items.map((item) => {
       return (
         <CarouselItem
           className="custom-tag"
@@ -82,6 +144,24 @@ class Slider extends Component {
         </CarouselItem>  
       );
     });
+    
+    if(sliders !== null) {
+      console.log("sliders", sliders)
+      slides = sliders.map((slider, index) => {
+        return (
+          <CarouselItem
+            className="custom-tag"
+            tag="div"
+            key={index}
+            onExiting={this.onExiting}
+            onExited={this.onExited}>
+            <img src={slider.images_url} alt={slider.title} className="custom-tag"/>
+            <CarouselCaption className="text-danger" captionText={slider.keterangan} captionHeader={slider.title} />
+          </CarouselItem>  
+        );
+      });
+  
+    }
 
     return (
 

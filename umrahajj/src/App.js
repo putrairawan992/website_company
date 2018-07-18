@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Faq from './pages/Faq';
 import Contact from './pages/Contact';
+import Howtobepartner from './pages/Howtobepartner';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
               <Route path="/home" component={Home}/>
               <Route path="/faq" component={Faq} />
               <Route exact path="/" component={Home}/>
+              <Route path="/howtobepartner" component={Howtobepartner}/>
               <Route path="/contact" component={Contact}/>
 
               <Footer />

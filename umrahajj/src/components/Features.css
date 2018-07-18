@@ -1,3 +1,13 @@
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .jumbotron2 {
   color: inherit;
   background-image: url("../images//5430.png");
@@ -35,7 +45,7 @@
   background-size: 69%;
   background: url("../images/phone.png");
   background-repeat: no-repeat;
-  margin-left: 40px;
+  margin-left: 10px;
   margin-top: 137px;
 }
 

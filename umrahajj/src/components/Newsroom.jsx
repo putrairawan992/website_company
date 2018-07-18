@@ -62,10 +62,10 @@ function SamplePrevArrow(props) {
 
 }
 
-const PostCard = ({title, body, imageUrl, imageCover}) => (
+const PostCard = ({title, body, imageCover}) => (
 	<div class="carousel-cell22">
-		<a href="newsroom_details.html">
-			<img style={imageCover} src={""} className="img33" />
+		<a href="https://umrahajj.co/blog/">
+			<img style={imageCover} src={""} className="img-responsive" />
 			<div class="newsroom-text1">
 				<h1>{ title }</h1>
 				<p>{ body }</p>
@@ -81,12 +81,10 @@ class Newsroom extends React.Component {
     }
     
     fetchFromApi() {
-        console.log("axios")
         axios({
             method: 'GET',
             url: 'https://umrahajj.co/blog/wp-json/wp/v2/posts?page=1',
         }).then(res => {
-            console.log(res.data)
             this.setState({
                 posts: [...res.data],
             });
@@ -108,11 +106,6 @@ class Newsroom extends React.Component {
 		if(this.state.posts != null) {
 			cards = posts.map(post => {
 				const imageUrl = post.better_featured_image.source_url;
-				console.log("post", post)
-				console.log("imageUrl", imageUrl);
-				console.log("excerpt", post.excerpt.rendered);
-				console.log("title", post.title.rendered);
-
 				const imageCover = {
 					background: `url(${imageUrl})`,
 					"background-size": "cover",
