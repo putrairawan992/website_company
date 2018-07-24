@@ -12,6 +12,8 @@ import Home from "../pages/Home";
 
 export default ({ close }) => (
 
+  <div>
+
   <Container fluid>
     <Row>
 
@@ -34,30 +36,29 @@ export default ({ close }) => (
               </NavLink>
             </li>
             </Col>
-            <Col md="3" xs="12">
-              <li>
-                <NavLink onClick={close} activeClassName="current" to="howtobepartner">
-                  How To Be Partner
-                </NavLink>
-              </li>
-              </Col>
               <Col md="3" xs="12">
                 <li>
-                  <NavLink onClick={close} activeClassName="current" to="#">
-                    Terms & Condition
+                  <NavLink onClick={close} activeClassName="current" to="howtobepartner">
+                    How To Be Partner
                   </NavLink>
                 </li>
                 </Col>
                 <Col md="3" xs="12">
-                    <li>
-                      <NavLink onClick={close} activeClassName="cuttent" to="/faq">
-                        FAQ
-                      </NavLink>
-                    </li>
+                  <li>
+                    <NavLink onClick={close} activeClassName="current" to="#">
+                      Terms & Condition
+                    </NavLink>
+                  </li>
+                  </Col>
+                    <Col md="3" xs="12">
+                        <li>
+                          <NavLink onClick={close} activeClassName="cuttent" to="/faq">
+                            FAQ
+                          </NavLink>
+                        </li>
                     </Col>
-                    </Row>
-
-                      <div className="main-menu3">
+                </Row>
+                <div className="main-menu3">
                       <Row>
                       <Col md="3" xs="12">
                         <li>
@@ -67,37 +68,35 @@ export default ({ close }) => (
                         </li>
                         </Col>
                         <Col md="3" xs="12">
-                <li>
-                  <NavLink onClick={close} activeClassName="current" to="#">
-                   Privacy Policy
-                  </NavLink>
-                </li>
-                </Col>
-                <Col md="3" xs="12">
-                    <li>
-                      <NavLink onClick={close} activeClassName="cuttent" to="#">
-                        {/* FAQ */}
-                      </NavLink>
-                    </li>
-                    </Col>
+                          <li>
+                            <NavLink onClick={close} activeClassName="current" to="#">
+                            Privacy Policy
+                            </NavLink>
+                          </li>
+                        </Col>
+                        <Col md="3" xs="12">
+                            <li>
+                              <NavLink onClick={close} activeClassName="cuttent" to="#">
+                                {/* FAQ */}
+                              </NavLink>
+                            </li>
+                        </Col>
                     </Row>
-                    </div>
-
-
-          </ul>
+                </div>
+            </ul>
         </div>
 
-       </Row>
+      </Row>
+  </Container>
 
-
-<div className="footer-newsroom hidden-xs">
-  <Row>
-    <Col md="6">
-      <div className="form-group11">
-        <input className="form-control" type="text" name="email" placeholder="youremail@example.com"/>
-          <button className="btn btn11 btn-success btn3" type="submit">SUBSCRIBE</button>
-      </div>
-    </Col>
+  <Container fluid className="footer-newsroom hidden-xs">
+    <Row>
+      <Col md="6">
+        {/* <div className="form-group11">
+          <input className="form-control" type="text" name="email" placeholder="youremail@example.com"/>
+            <button className="btn btn11 btn-success btn3" type="submit">SUBSCRIBE</button>
+        </div> */}
+      </Col>
         <Col md="6">
             <div className="social-newsroom">
                 <p>Follow Us</p>
@@ -108,15 +107,12 @@ export default ({ close }) => (
                 <FontAwesomeIcon icon={faLinkedinIn} /></a>
                 <a className="callme1 callme44" href="https://twitter.com/umrahajjworld" target="_blank">
                 <FontAwesomeIcon icon={faTwitter} /></a>
-
             </div>
+         </Col>
+      </Row>
+    </Container>
 
-            </Col>
-            </Row>
-          </div>
-
-
-
-  </Container>
+    </div>
+ 
 
 );

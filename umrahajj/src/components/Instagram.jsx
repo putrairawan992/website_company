@@ -66,8 +66,8 @@ const PostCard = ({imageUrl}) => {
     "background-size": "cover",
   }
   return (
-	<div class="carousel-cell22">
-		<a href="newsroom_details.html">
+	<div class="carousel-cell77">
+		<a href="#">
 			<img style={imageCover} src={""} className="img33" />
 		</a>
 	</div>
@@ -83,7 +83,7 @@ class Instagram extends React.Component {
       console.log("axios")
       axios({
           method: 'GET',
-          url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=4679952802.1677ed0.4cd5e847be2f48e19889b29dc6645b5a',
+          url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=5689456550.1677ed0.86bd5a054df349fe80b3b43cfd9ec400',
       }).then(res => {
           console.log("instagram", res.data.data)
           this.setState({
@@ -117,11 +117,13 @@ class Instagram extends React.Component {
       console.log("cards", cards)
 
       const settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 3
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
       };
       return (
 

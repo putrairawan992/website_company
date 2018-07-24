@@ -11,8 +11,8 @@
 
     position: absolute;
     right: 0;
-    top: 645px;
-    left: -160px;
+    bottom: 100px;
+    left: -192px;
     z-index: 15;
     display: list-item;
     -ms-flex-pack: center;
