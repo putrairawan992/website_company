@@ -2,17 +2,17 @@
     margin-top: 308px;
 }
 
-.image00 {
-     width: 100%;
+.slider-content-home {
+    margin-left: 150px;
+    width: 100%;
 }
 
 .slider-content-home 
 .carousel-indicators { 
-
     position: absolute;
     right: 0;
     bottom: 100px;
-    left: -192px;
+    left: -190px;
     z-index: 15;
     display: list-item;
     -ms-flex-pack: center;
@@ -29,7 +29,7 @@
         margin: 10px;
         text-indent: -999px;
         cursor: pointer;
-        border: 1px solid #fff;
+        border: 1px solid black;
         border-radius: 10px;
     }
 

@@ -21,10 +21,28 @@ const contentStyle = {
 };
 
 class Tombolmenu extends React.Component {
+
+  state = {
+    backgroundColor: 'transparent'
+  }
+
+  listenScrollEvent = e => {
+    if (window.scrollY > 400) {
+      this.setState({backgroundColor: 'white'})
+    } else {
+      this.setState({backgroundColor: 'transparent'})
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+
+
     render() {
         return (
           <Container fluid>
-                <div class="navbar-inverse navbar-fixed-top">
+            <div class="navbar-inverse navbar-fixed-top" style={{backgroundColor: this.state.backgroundColor}}>
               <Row>
               <Col md="6" xs="4">
                 <div>

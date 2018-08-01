@@ -45,7 +45,7 @@ export default ({ close }) => (
                 </Col>
                 <Col md="3" xs="12">
                   <li>
-                    <NavLink onClick={close} activeClassName="current" to="#">
+                    <NavLink onClick={close} activeClassName="current" to="termscondition">
                       Terms & Condition
                     </NavLink>
                   </li>

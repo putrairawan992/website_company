@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Faq from './pages/Faq';
 import Contact from './pages/Contact';
 import Howtobepartner from './pages/Howtobepartner';
+import TermsCondition from './pages/TermsCondition';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
               <Route exact path="/" component={Home}/>
               <Route path="/howtobepartner" component={Howtobepartner}/>
               <Route path="/contact" component={Contact}/>
+              <Route path="/termscondition" component={TermsCondition}/>
 
               <Footer />
             </div>

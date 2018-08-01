@@ -9,24 +9,18 @@ footer {
     margin-top: 5%;
 }
 
-footer .menufirst1{
-
-    padding-left: 83px;
+.menufirst {
+    margin-top: 155px;
 }
-  
+
 footer .menu {
 
     list-style: none;
     text-decoration-line: none;
-    margin-top: 310px;
+    /* margin-top: 310px; */
     text-align: left;  
 }
 
-footer .subscribe{
-    margin-top: 310px;  
-
-}
-  
 footer .menu li a {
     color: white;
     text-decoration-line: none;
@@ -62,30 +56,36 @@ footer .menu li a {
 
   .download-icon b{
     color: white;
-    margin-top: -30px;
+    margin-left: 20px;
+  }
+
+  .download-icon img {
+      float: left;
+      margin-left: 10px;
+      margin-top: 10px;
   }
   
   
   footer .googleplay{
-    margin-top: -48px;
     width: 38%;
   }
   
   footer .iosstore{
-    margin-top: 18px;
-    margin-left: 180px;
     width: 35%;
   }
 
   footer .footer-bottom p {
     color: #ffffff;
-    padding-top: 45px;
+    text-align: center;
   }
 
-  .footer-bottom .icon-footer-botom{
-    float: right;
-    padding-top: 40px;
-  }
+  .download-icon {
+    margin-top: 50px;
+}
+
+  .icon-footer-botom {
+   margin-left: 1200px;
+}
 
   .svg-inline--fa {
 
