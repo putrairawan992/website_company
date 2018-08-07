@@ -57,7 +57,7 @@ class Tombolmenu extends React.Component {
                 </div>
                 </Col>
             
-            <Col md="2" xs="4">
+              <Col md="2" xs="4">
                 <div style={styles}>
                       <div className="menu-home">
                         <Popup
