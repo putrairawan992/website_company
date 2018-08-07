@@ -4,7 +4,7 @@ import './Home.css';
 import Slider from '../components/Slider.jsx';
 import Features from '../components/Features.jsx';
 import SimpleSlider from '../components/Instagram.jsx';
-import Newsroom from '../components/Newsroom.jsx'
+import Newsroom from '../components/Newsroom.jsx';
 import Tombolmenu from '../components/Tombolmenu';
 import { Container, Row, Col} from "reactstrap";
 

@@ -7,8 +7,15 @@
   
   }
 
+  .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    margin-left: -29px;
+}
+
   .carousel-cell77 img{
-    margin-left: 20px;
+    margin-left: 80px;
     height: 300px;
     width: 300px;
    }
@@ -47,7 +54,7 @@
 }
 
   .homepage-instagram .slick-prev {
-    left: 95%;
+    left: 94%;
 }
 
   .homepage-instagram .slick-next, .slick-prev {

@@ -43,6 +43,10 @@
   .image-content2 {
     display: -webkit-box;
     text-align: center;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 10px;
   }  
   
   /*------ END IMAGE KUBBAH ABOUT HOME PAGE ------ */

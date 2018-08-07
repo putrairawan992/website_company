@@ -2,15 +2,14 @@ import React, { Component } from "react";
 import Slider, { CenterMode } from 'react-slick';
 import './Newsroom.css';
 import axios from 'axios';
-import { render } from 'react-dom';
-import Parser from 'html-react-parser';
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      style={{ ...style, display: "block", background: "darkgrey" }}
       onClick={onClick}
     />
   );
@@ -21,23 +20,21 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green", height: "400" }}
+      style={{ ...style, display: "block", background: "darkgrey" }}
       onClick={onClick}
     />
   );
 }
 
 
-const PostCard = ({title, body, imageCover}) => (
+const PostCard = ({title, body, imageCover, link}) => (
 	<div class="carousel-cell22">
-		<a href="#">
-			<img style={imageCover} src={""} className="img-responsive" />
+			<img style={imageCover} className="img-responsive" />
 			<div class="newsroom-text1">
 				<h1>{ title }</h1>
-				<p>{ body }</p>
-				<p class="newsroom-text2">More</p>
+				  <p dangerouslySetInnerHTML={{__html:body}}></p>
+				    <a href={link} target="blank"><p className="neswroom-text2">More</p></a>
 			</div>
-		</a>
 	</div>
 )
 
@@ -69,21 +66,27 @@ class Newsroom extends React.Component {
     render() {
 		const { posts } = this.state;
 
-		let cards = null;
+    let cards = null;
+
+      
 
 		if(this.state.posts != null) {
 			cards = posts.map(post => {
-				const imageUrl = post.better_featured_image.source_url;
+        const imageUrl = post.better_featured_image.source_url;
 				const imageCover = {
 					background: `url(${imageUrl})`,
 					"background-size": "cover",
-				}
+        }
+ 
+     
 
 				return <PostCard 
 					title={post.title.rendered}
 					body={post.excerpt.rendered}
 					imageUrl={".."}
-					imageCover={imageCover}
+          imageCover={imageCover}
+          link={post.link}
+      
 				/>
 			}) 
 		}
@@ -100,15 +103,12 @@ class Newsroom extends React.Component {
 
 		return (
 
-     
-
 		<div className="homepage-newsroom newsroom-homepage hidden-xs">
-
-		<h3>Newsroom</h3>
-			<Slider {...settings}>
-       {cards}
-			</Slider>
-		</div>
+      <h3>Newsroom</h3>
+        <Slider {...settings}>
+        {cards}
+        </Slider>
+      </div>
     );
   
     }

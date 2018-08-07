@@ -68,7 +68,7 @@ const PostCard = ({imageUrl}) => {
   return (
 	<div class="carousel-cell77">
 		<a href="#">
-			<img style={imageCover} src={""} className="img33" />
+			<img style={imageCover} className="img33" />
 		</a>
 	</div>
 )}
@@ -83,7 +83,7 @@ class Instagram extends React.Component {
       console.log("axios")
       axios({
           method: 'GET',
-          url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=5689456550.1677ed0.86bd5a054df349fe80b3b43cfd9ec400',
+          url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=5689456550.1677ed0.9b17035bd4ac4d6a97f09f188c224e84',
       }).then(res => {
           console.log("instagram", res.data.data)
           this.setState({

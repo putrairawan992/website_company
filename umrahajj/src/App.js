@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Howtobepartner from './pages/Howtobepartner';
 import TermsCondition from './pages/TermsCondition';
 
+
 class App extends Component {
   render() {
     return (
@@ -21,9 +22,9 @@ class App extends Component {
 
               {/* Tinggal tambahin attribut path lalu buat pages nya
               lalu dikasih ke attribut component */}
+              <Route exact path="/" component={Home}/>
               <Route path="/home" component={Home}/>
               <Route path="/faq" component={Faq} />
-              <Route exact path="/" component={Home}/>
               <Route path="/howtobepartner" component={Howtobepartner}/>
               <Route path="/contact" component={Contact}/>
               <Route path="/termscondition" component={TermsCondition}/>

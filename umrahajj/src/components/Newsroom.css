@@ -6,11 +6,11 @@
   }
 
 .homepage-newsroom .slick-next {
-    right: 1%;
+  right: 1%;
 }
 
 .homepage-newsroom .slick-prev {
-  left: 95%;
+  left: 96%;
 }
 
 .homepage-newsroom .slick-next, .slick-prev {
@@ -30,7 +30,7 @@
   background-color: #128e9d;
   border-radius: 0 0 8px 8px;
   height: 30vh;
-  margin-left: 20px;
+  margin-left: 80px;
   margin-top: -157px;
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
@@ -45,6 +45,11 @@
     font-size: 12px;
     color: white;
     padding-left: 5px;
+    
+  }
+
+  .neswroom-text2{
+    text-decoration: underline;
   }
 
   .carousel-cell22 h1 {
@@ -55,13 +60,9 @@
     padding-top: 5px;
   }
   
-  .carousel-cell22 .newsroom-text2 {
-    text-decoration: underline;
-  }
-
   .carousel-cell22 img{
     height: 300px;
-    margin-left: 20px;
+    margin-left: 80px;
     width: 300px;
    }
    
