@@ -10,14 +10,13 @@ class Footer extends Component {
     render() {
      return(
 
-      <footer className="footer">
-      <div>
-      	<Container fluid>
+
+      	<Container fluid className="footer">
 
           <Row>
             <Col xs="12" lg="12">
               <div className="menufirst">
-                <ul class="menu menu11">
+                <ul className="menu menu11">
                   <li><a href="">Umrahajj</a></li>
                   <li><a href="">Info@umrahajj.co</a></li>
                 </ul>
@@ -122,17 +121,16 @@ class Footer extends Component {
 									</form>
               </div> */}
 
-              <div class="download-icon">
+              <div className="download-icon">
 									<b>Download Umrahajj Apps </b>
                   <img src={require("../images/googleplay.png")} className=" img-responsive googleplay" />
                   <img src={require("../images/iosstore.png")} className=" img-responsive iosstore"/>
 							</div>
             </Col>
-            <div class="footer-bottom">
+          </Row> 
      
-            
-              <Col xs="12" lg="12">
-              <div class="icon-footer-botom">
+            <Row>
+              <Col xs="12" lg="12" className="icon-footer-botom">
                 <a  href="https://www.facebook.com/umrahajjworld/" target="_blank"><FontAwesomeIcon icon={faFacebook} className="callme" /></a>
 								<a href="https://www.instagram.com/umrahajj/" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="callme" /></a>
@@ -140,24 +138,14 @@ class Footer extends Component {
                 <FontAwesomeIcon icon={faLinkedin} className="callme" /></a>
 								<a  href="https://twitter.com/umrahajjworld" target="_blank">
                 <FontAwesomeIcon icon={faTwitter} className="callme" /></a>
-              </div>
               </Col>
-
-               <Col xs="12" lg="12">
+               <Col xs="12" lg="12" className="footer-bottom ">
                   <p> www.umrahajj.co &copy; Umrahajj 2018</p>
-             </Col>
-           
-          </div>
+               </Col>
            </Row>
-
-      
-
-
            
-
         </Container>
-        </div>
-        </footer>
+      
  
    
      

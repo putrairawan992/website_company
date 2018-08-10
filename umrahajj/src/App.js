@@ -11,13 +11,14 @@ import Faq from './pages/Faq';
 import Contact from './pages/Contact';
 import Howtobepartner from './pages/Howtobepartner';
 import TermsCondition from './pages/TermsCondition';
+import {Container, Row, Col} from 'reactstrap';
 
 
 class App extends Component {
   render() {
     return (
         <BrowserRouter>
-            <div>
+           <div>
               <Tombolmenu />
 
               {/* Tinggal tambahin attribut path lalu buat pages nya
@@ -30,8 +31,7 @@ class App extends Component {
               <Route path="/termscondition" component={TermsCondition}/>
 
               <Footer />
-            </div>
-
+           </div>     
         </BrowserRouter>
     );
   }

@@ -1,7 +1,6 @@
  /*----------------- START FOOTER CSS -----------------*/
   
-footer {
-
+.footer {
     background: url("../images/footer.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +12,7 @@ footer {
     margin-top: 155px;
 }
 
-footer .menu {
+.footer .menu {
 
     list-style: none;
     text-decoration-line: none;
@@ -21,7 +20,7 @@ footer .menu {
     text-align: left;  
 }
 
-footer .menu li a {
+.footer .menu li a {
     color: white;
     text-decoration-line: none;
 }
@@ -66,15 +65,15 @@ footer .menu li a {
   }
   
   
-  footer .googleplay{
+  .footer .googleplay{
     width: 38%;
   }
   
-  footer .iosstore{
+  .footer .iosstore{
     width: 35%;
   }
 
-  footer .footer-bottom p {
+  .footer .footer-bottom p {
     color: #ffffff;
     text-align: center;
   }
@@ -84,7 +83,7 @@ footer .menu li a {
 }
 
   .icon-footer-botom {
-   margin-left: 1200px;
+   text-align: right;
 }
 
   .svg-inline--fa {
@@ -96,7 +95,7 @@ footer .menu li a {
     color: white;
   }
 
-footer .svg-inline--fa.fa-w-14 {
+.footer .svg-inline--fa.fa-w-14 {
     width: 1.875em;
 }
   
@@ -104,27 +103,27 @@ footer .svg-inline--fa.fa-w-14 {
   @media screen and (min-width: 320px) and (max-width: 339px) {
   
  
-  footer .menufirst{
+  .footer .menufirst{
       padding-left: 83px;
       margin-top: -65px;
   }
   
-  footer .menufirst1{
+  .footer .menufirst1{
       padding-left: 83px;
       margin-top: -290px;
   }
   
-  footer .menufirst2{
+  .footer .menufirst2{
       padding-left: 83px;
       margin-top: -313px;
   }
   
-  footer .menufirst3{
+  .footer .menufirst3{
       padding-left: 83px;
       margin-top: -319px;
   }
   
-  footer .menufirst4{
+  .footer .menufirst4{
       padding-left: 83px;
       margin-top: -314px;
   }

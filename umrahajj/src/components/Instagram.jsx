@@ -66,7 +66,7 @@ const PostCard = ({imageUrl}) => {
     "background-size": "cover",
   }
   return (
-	<div class="carousel-cell77">
+	<div className="carousel-cell77">
 		<a href="#">
 			<img style={imageCover} className="img33" />
 		</a>
@@ -127,15 +127,15 @@ class Instagram extends React.Component {
       };
       return (
 
-      <div className="instagram container-fluild homepage-instagram">
+      <div className="instagram container-fluild homepage-instagram hidden-xs">
           <h1 className="">Our Gallery</h1>
 
           <Slider {...settings}>
             {cards}
           </Slider>
 
-          <div class="logo-instagram">
-						<p class="callme2">FOLLOW US</p>
+          <div className="logo-instagram">
+						<p className="callme2">FOLLOW US</p>
             <a href="https://www.instagram.com/umrahajj/" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="callme" /></a>
 					</div>

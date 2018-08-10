@@ -4,3 +4,347 @@ html, body {
     width: 100%;
     height: 100%;
   }
+
+  .content-home {
+      height: auto;
+  }
+
+  .button2 {
+    margin-top: 308px;
+}
+
+.slider-content-home {
+    width: 100%;
+}
+
+.slider-content-home 
+.carousel-indicators { 
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    left: -190px;
+    z-index: 15;
+    display: list-item;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+  .slider-content-home  .carousel-indicators li  {
+        display: list-item;
+        width: 10px;
+        height: 10px;
+        margin: 10px;
+        text-indent: -999px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .slider-content-home .carousel-indicators .active {
+        background-color: #26b9cb;
+        display: list-item;
+    }
+
+    @media screen and (min-width: 377px) and (max-width: 500px ){
+    .slider-content-home{
+        margin-top: 119px;
+    }
+
+}    
+
+/*------------------------------------ ABOUT UMRAHAJJ CSS HOME PAGE---------------------------------------------------- */
+.content-home-1 {
+    background-image: url("../images/background_putihmiring1.png");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height: 122vh;
+    position: relative;
+    margin-top: -10%;
+    margin-left: -59px;
+  }
+  
+  /*------ START IMAGE KUBBAH ABOUT HOME PAGE ------ */
+  
+  .masjid_kabbah {
+    margin-top: 100px;
+  }
+  
+  @media (max-width: 767px) {
+    .hidden-xs {
+      display: none !important;
+    }
+  }
+  
+  .about h1 {
+    color: #24565c;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 70px;
+  }
+    
+  .hr_sendiri{
+    margin-top: -4%;
+    width: 30%;
+    color: #26b9cb;
+    border-top: 6px solid;
+    margin-left: 402px;
+  }
+  
+  .tulisan {
+    font-size: 18px;
+  } 
+ 
+  .image-content2 {
+    display: -webkit-box;
+    text-align: center;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+  }  
+  
+  /*------ END IMAGE KUBBAH ABOUT HOME PAGE ------ */
+  
+  
+  /*------------- START ABOUT IMAGE HOME PAGE-----------------  */
+   
+  .image-content2 .img2 {
+    margin-left: 42px;
+    height: 15vh;
+  }
+  
+  .image-content2 .img1 {
+    margin-left: 42px;
+    height: 15vh;
+  }
+  
+  .image-content2 .img3 {
+    margin-left: 28px;
+    height: 15vh;
+  }
+  
+  
+  /*-------------END START ABOUT IMAGE HOME PAGE-----------------  */
+  
+  /*----------------------------------------- ABOUT UMRAHAJJ CSS HOME PAGE -------------------------------------------------*/
+  
+  .img-responsive,
+  .thumbnail > img,
+  .thumbnail a > img,
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 377px) and (max-width: 500px ){
+
+    .about h1 {
+      font-size: 23px;
+      margin-left: 269px;
+      margin-top: 71px;
+    }
+
+    .hr_sendiri {
+      margin-top: 2%;
+      width: 80%;
+      color: #26b9cb;
+      border-top: 4px solid;
+      margin-left: -57px;
+    }  
+
+    .tulisan {
+      font-size: 14px;
+      text-align: right;
+    }
+    
+  .image-content2 .img1 {
+    margin-left: 17%;
+    width: 12%;
+    margin-top: 1%;
+    position: absolute;
+}
+
+.content-home-1 {
+  background-image: url(/static/media/background_putihmiring1.d9d1d464.png);
+  background-size: 324%;
+  background-repeat: no-repeat;
+  height: 122vh;
+  position: relative;
+  margin-top: -18%;
+  margin-left: -59px;
+} 
+
+.image-content2 .img3 {
+  margin-left: 75%;
+  width: 17%;
+  margin-top: 1%;
+  position: absolute;
+}
+
+.image-content2 .img2 {
+  margin-left: 46%;
+  width: 13%;
+  margin-top: 0%;
+  position: absolute;
+  height: 55px;
+}
+
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.jumbotron2 {
+  color: inherit;
+  background-image: url("../images//5430.png");
+  background-size: cover;
+  margin-top: -272px;
+  height: auto;
+
+}
+
+.jumbotron2 .container {
+  max-width: 100%;
+}
+
+.jumbotron2 .hr_sendiri1 {
+  margin-top: -24%;
+  width: 98%;
+  color: #26b9cb;
+  border-top: 6px solid;
+  margin-left: 125px;
+}
+
+.jumbotron2  h1 {
+  font-size: 35px;
+  color: #24565c;
+  margin-left: 915px;
+  margin-top: 195px;
+  position: absolute;
+}
+
+.device {
+  margin: auto;
+  position: relative;
+  height: 91vh;
+  width: 359px;
+  background-size: 69%;
+  background: url("../images/phone.png");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-top: 137px;
+}
+
+@media screen and (max-width: 768px) {
+  
+.device {
+  width: 290px;
+  min-height: 531px;
+  background-size: 100%;
+  margin-left: auto;
+  margin-top: 300px;
+}   
+
+}  
+
+@media screen and (max-width: 768px) {
+
+  .device .device-content {
+  left: 43px;
+  width: 200px;
+  top: 89px;
+  height: 359px;
+}
+
+}
+  
+@media screen and (max-width: 768px) {
+
+.device .device-content img {
+  width: 236px !important;
+  height: 425px !important;
+}
+
+}
+
+.device .device-content img {
+  width: 247px;
+  height: 410px; 
+}
+
+.device .device-content {
+  position: absolute;
+  top: 65px;
+  left: 27px;
+  width: 238px;
+  height: 422px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+  
+.device .device-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  
+.device
+.device-content
+.showcase-slider
+
+.flickity-page-dots {
+  bottom: 20px;
+}  
+
+.jumbotron2 .img1 {
+margin-top: 250px;
+
+}
+
+@media screen and (min-width: 377px) and (max-width: 500px ){
+  
+  .jumbotron2 h1 {
+    font-size: 25px !important;
+    color: #24565c !important;
+    margin-left: 210px !important;
+    margin-top: 202px !important;
+    position: absolute !important;
+  }
+
+  .jumbotron2 {
+    background-size: cover;
+    margin-top: -359px !important;
+    height: auto;
+  } 
+
+  .jumbotron2 .hr_sendiri1 {
+    margin-top: 3%;
+    width: 98%;
+    color: #26b9cb;
+    border-top: 3px solid;
+    margin-left: -56px;
+}
+
+.device .device-content {
+  position: absolute;
+  top: 65px;
+  left: 27px;
+  width: 242px;
+  height: -28px;
+  background: rgba(0, 0, 0, 0.3);
+}
+  
+}
+        

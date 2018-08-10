@@ -28,9 +28,9 @@ function SamplePrevArrow(props) {
 
 
 const PostCard = ({title, body, imageCover, link}) => (
-	<div class="carousel-cell22">
+	<div className="carousel-cell22">
 			<img style={imageCover} className="img-responsive" />
-			<div class="newsroom-text1">
+			<div classNames="newsroom-text1">
 				<h1>{ title }</h1>
 				  <p dangerouslySetInnerHTML={{__html:body}}></p>
 				    <a href={link} target="blank"><p className="neswroom-text2">More</p></a>

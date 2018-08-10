@@ -6,8 +6,7 @@ import "./Tombolmenu.css";
 import logo from '../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faFacebook, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
-import Contact from "../pages/Contact";
-import Home from "../pages/Home";
+
 
 
 export default ({ close }) => (
